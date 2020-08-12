@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Desafio_09_01_Ciclobike</string>
+    <string name="button_List_LasCondes_Text">Listar Las Condes</string>
+    <string name="button_ListAll_Text">Listar Todas</string>
+</resources>
