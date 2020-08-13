@@ -1,6 +1,7 @@
 package com.example.desafio_09_01_ciclobike
 
 import java.util.*
+import kotlin.collections.ArrayList
 
 /**
  * Created by ciromine on 8/26/19.
@@ -38,5 +39,17 @@ class SetupCiclovias {
             lista.add(ciclovia)
         }
         return lista
+    }
+
+    fun initLasCondes() : MutableList<Ciclovia> {
+        val lista : MutableList<Ciclovia> = ArrayList()
+
+        for(i in 0..9) {
+            if(comunas[i] == "Las Condes")
+                lista.add(Ciclovia(nombres[i], comunas[i]))
+        }
+
+        return lista
+
     }
 }

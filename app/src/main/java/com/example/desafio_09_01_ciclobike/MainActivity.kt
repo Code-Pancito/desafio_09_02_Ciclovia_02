@@ -10,7 +10,7 @@ import com.example.desafio_09_01_ciclobike.SetupCiclovias as Setup
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var buttonList_LasCondes : Button
+    lateinit var buttonListLasCondes : Button
     lateinit var buttonListAll : Button
     lateinit var recyclerViewLista : RecyclerView
     lateinit var cicloviaAdapter: CicloviaAdapter
@@ -23,5 +23,15 @@ class MainActivity : AppCompatActivity() {
         recyclerViewLista = findViewById(R.id.recyclerView_ListaCiclovias)
         recyclerViewLista.adapter = CicloviaAdapter(Setup().init() as MutableList<Ciclovia>)
         recyclerViewLista.layoutManager = LinearLayoutManager(this)
+
+        buttonListLasCondes = findViewById(R.id.button_List_LasCondes)
+        buttonListLasCondes.setOnClickListener {
+            recyclerViewLista.adapter = CicloviaAdapter(Setup().initLasCondes())
+        }
+
+        buttonListAll = findViewById(R.id.button_ListAll)
+        buttonListAll.setOnClickListener {
+            recyclerViewLista.adapter = CicloviaAdapter(Setup().init() as MutableList<Ciclovia>)
+        }
     }
 }
