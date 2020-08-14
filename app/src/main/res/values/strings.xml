@@ -2,4 +2,12 @@
     <string name="app_name">Desafio_09_01_Ciclobike</string>
     <string name="button_List_LasCondes_Text">Listar Las Condes</string>
     <string name="button_ListAll_Text">Listar Todas</string>
+    <string-array name="spinner_Comunas_options">
+        <item>Mostrar Todo</item>
+        <item>Las Condes</item>
+        <item>La Reina</item>
+        <item>Ñuñoa</item>
+        <item>Macul</item>
+        <item>Providencia</item>
+    </string-array>
 </resources>

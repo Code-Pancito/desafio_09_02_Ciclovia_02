@@ -32,6 +32,15 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@id/button_List_LasCondes"
+            app:layout_constraintEnd_toStartOf="@id/spinner_Comunas"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <Spinner
+            android:id="@+id/spinner_Comunas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/button_ListAll"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
